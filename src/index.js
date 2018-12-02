@@ -1,7 +1,4 @@
 import React from 'react';
-import { Router } from 'react-router';
-import { CookiesProvider } from 'react-cookie';
-import createBrowserHistory from 'history/createBrowserHistory';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -15,7 +12,6 @@ import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 const sagaMiddleware = createSagaMiddleware();
-const history = createBrowserHistory();
 
 const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
   ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
@@ -29,11 +25,7 @@ sagaMiddleware.run(rootSaga);
 
 render(
   <Provider store={store}>
-    <Router history={history}>
-      <CookiesProvider>
-        <App />
-      </CookiesProvider>
-    </Router>
+    <App />
   </Provider>,
   document.getElementById('root'),
 );
