@@ -1,0 +1,31 @@
+.people-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+  grid-auto-rows: minmax(10vh, 100px);
+  margin-bottom: 1rem;
+}
+
+.person {
+  background-color: #14233c;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.person:hover {
+  background-color: #1e3255;
+  transform: scale(1.05);
+}
+
+.person>.avatar {
+  border-radius: 50%;
+  display: block;
+  height: 50px;
+  margin: 0 auto 0.5rem auto;
+  width: 50px;
+}

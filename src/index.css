@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  background-color: rgb(238, 238, 238);
+  margin: 24px 0 24px 0;
+}
+
+.error {
+  color: #ff9494;
+}
+
+.loading {
+  margin: 2rem auto;
+  position: fixed;
+  top: 10vh;
+  left: calc(50vw - 32px);
+}
