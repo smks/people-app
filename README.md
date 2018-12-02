@@ -2,6 +2,8 @@
 
 **Created by Shaun Stone**
 
+![](./people.gif)
+
 ## How to run
 
 1. Run `npm install` in the root of the project to install the necessary external dependencies.
